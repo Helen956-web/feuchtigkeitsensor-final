@@ -1,5 +1,5 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
-    Feuchtigkeit = pins.analogReadPin(AnalogPin.P0)
+    Feuchtigkeit = pins.analogReadPin(AnalogPin.P1)
     if (Feuchtigkeit <= 8) {
         basic.setLedColor(0x00ff00)
     } else if (Feuchtigkeit > 400) {
